@@ -48,3 +48,33 @@ Threats:
     )
 
     text = response.choices[0].message.content.strip()
+
+    swot = parse_swot(text)
+    return swot
+
+
+
+def parse_swot(text: str) -> dict:
+    """
+    Parses GPT response text into a dictionary of SWOT categories.
+    """
+
+    swot_dict = {"strengths": [], "weaknesses": [], "opportunities": [], "threats": []}
+    current_key = None
+
+    lines = text.splitlines()
+    for line in lines:
+        line_lower = line.strip().lower()
+        # Detect section headers
+        if line_lower.startswith("strengths:"):
+            current_key = "strengths"
+            continue
+        elif line_lower.startswith("weaknesses:"):
+            current_key = "weaknesses"
+            continue
+        elif line_lower.startswith("opportunities:"):
+            current_key = "opportunities"
+            continue
+        elif line_lower.startswith("threats:"):
+            current_key = "threats"
+            continue
