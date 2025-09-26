@@ -22,3 +22,29 @@ Strengths:
 1.
 2.
 ...
+
+Weaknesses:
+1.
+2.
+...
+
+Opportunities:
+1.
+2.
+...
+
+Threats:
+1.
+2.
+...
+"""
+
+    response = openai.ChatCompletion.create(
+        model=MODEL_NAME,
+        messages=[{"role": "user", "content": prompt}],
+        max_tokens=500,
+        n=1,
+        temperature=0.7,
+    )
+
+    text = response.choices[0].message.content.strip()
