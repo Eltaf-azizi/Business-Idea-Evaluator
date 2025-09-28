@@ -78,3 +78,13 @@ def parse_swot(text: str) -> dict:
         elif line_lower.startswith("threats:"):
             current_key = "threats"
             continue
+
+
+        # Add bullet points to current section
+        if current_key and (line.strip().startswith("1.") or line.strip().startswith("-") or line.strip()):
+            # Remove numeric/bullet prefix if exists
+            clean_line = line.strip().lstrip("1234567890.- ").strip()
+            if clean_line:
+                swot_dict[current_key].append(clean_line)
+
+    return swot_dict
