@@ -77,3 +77,12 @@ button:disabled {
 .swot-section.opportunities h2 {
   color: #17a2b8;
 }
+
+.swot-section.threats h2 {
+  color: #ffc107;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
