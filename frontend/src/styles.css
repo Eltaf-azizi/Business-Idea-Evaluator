@@ -59,3 +59,21 @@ button:disabled {
 .swot-section {
   margin-bottom: 25px;
 }
+
+.swot-section h2 {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.swot-section.strengths h2 {
+  color: #28a745;
+}
+
+.swot-section.weaknesses h2 {
+  color: #dc3545;
+}
+
+.swot-section.opportunities h2 {
+  color: #17a2b8;
+}
