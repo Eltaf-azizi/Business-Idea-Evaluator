@@ -39,3 +39,23 @@ button {
   border-radius: 6px;
   cursor: pointer;
 }
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.result {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.swot-section {
+  margin-bottom: 25px;
+}
