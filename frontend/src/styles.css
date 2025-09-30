@@ -184,4 +184,47 @@ ul {
   padding: 20px 0;
 }
 
+.swot-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.swot-dashboard canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.swot-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .swot-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Login Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f9fafb;
+}
+
+.login-form {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
