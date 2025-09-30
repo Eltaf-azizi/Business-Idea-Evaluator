@@ -123,3 +123,65 @@ ul {
   color: white;
 }
 
+.input-form h3 {
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.prev-btn, .next-btn, .submit-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.prev-btn {
+  background-color: #6c757d;
+}
+
+.next-btn, .submit-btn {
+  background-color: #007bff;
+}
+
+.submit-btn {
+  flex: 1;
+  margin-left: 10px;
+}
+
+/* Result Display Styles */
+.result-display {
+  margin-top: 30px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.tab-button.active {
+  border-bottom-color: #007bff;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.tab-content {
+  padding: 20px 0;
+}
+
+}
