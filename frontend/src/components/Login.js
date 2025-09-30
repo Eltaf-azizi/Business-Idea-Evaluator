@@ -48,4 +48,49 @@ export default function Login({ onLogin }) {
     }
   };
 
+  return (
+    <div className="login-container">
+      <div className="login-form">
+        <h1>{isRegister ? 'Register' : 'Login'}</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="username"
+            placeholder="Username"
+            value={formData.username}
+            onChange={handleChange}
+            required
+          />
+          {isRegister && (
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          )}
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            value={formData.password}
+            onChange={handleChange}
+            required
+          />
+          <button type="submit" disabled={loading}>
+            {loading ? 'Processing...' : (isRegister ? 'Register' : 'Login')}
+          </button>
+        </form>
+        {error && <p className="error">{error}</p>}
+        <p>
+          {isRegister ? 'Already have an account?' : "Don't have an account?"}
+          <button type="button" onClick={() => setIsRegister(!isRegister)} className="link-btn">
+            {isRegister ? 'Login' : 'Register'}
+          </button>
+        </p>
+      </div>
+    </div>
+  );
 }
