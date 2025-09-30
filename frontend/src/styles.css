@@ -86,3 +86,40 @@ ul {
   list-style-type: disc;
   padding-left: 20px;
 }
+
+/* Input Form Styles */
+.input-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.step-indicator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.step {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddd;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.step.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.step.completed {
+  background-color: #28a745;
+  color: white;
+}
+
