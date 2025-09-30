@@ -1,23 +1,22 @@
 import React from 'react';
 
-export default function InputForm({ idea, setIdea, onSubmit, loading }) {
+export default function InputForm({ formData, setFormData, onSubmit, loading }) {
+  const handleChange = (field, value) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+  };
+
+  const isFormValid = Object.values(formData).every(value => value.trim() !== "");
+
   return (
     <form
       onSubmit={e => {
         e.preventDefault();
-        if (!loading) onSubmit();
+        if (!loading && isFormValid) onSubmit();
       }}
     >
-      <textarea
-        placeholder="Enter your startup business idea..."
-        value={idea}
-        onChange={e => setIdea(e.target.value)}
-        rows={6}
-        required
-        disabled={loading}
-      />
-      <button type="submit" disabled={loading || idea.trim() === ""}>
-        {loading ? "Evaluating..." : "Evaluate Idea"}
+      
+      <button type="submit" disabled={loading || !isFormValid}>
+        {loading ? "Analyzing..." : "Analyze Business"}
       </button>
     </form>
   );
