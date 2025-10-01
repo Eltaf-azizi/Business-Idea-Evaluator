@@ -20,3 +20,11 @@ The project consists of:
  - Real-time feedback, loading states, and error handling
  - Structured display of SWOT components in distinct sections
  - Clean, modular, and extensible codebase
+
+
+## Tech Stack
+
+ - Frontend: React.js, Fetch API, CSS3
+ - Backend: FastAPI, Python 3.11, OpenAI GPT API
+ - Deployment: Uvicorn, Docker (optional)
+ - Environment Management: Python-dotenv
