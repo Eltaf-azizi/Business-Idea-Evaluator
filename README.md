@@ -12,3 +12,11 @@ The project consists of:
  - A React-based frontend for user-friendly input and results display
  - A FastAPI backend that handles AI prompt generation and API communication
  - Integration with the OpenAI GPT API for natural language analysis
+
+## Features
+
+ - Simple and intuitive web UI to input startup ideas
+ - Backend AI integration generating a detailed SWOT analysis
+ - Real-time feedback, loading states, and error handling
+ - Structured display of SWOT components in distinct sections
+ - Clean, modular, and extensible codebase
