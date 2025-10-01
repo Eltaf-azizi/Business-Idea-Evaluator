@@ -28,3 +28,27 @@ The project consists of:
  - Backend: FastAPI, Python 3.11, OpenAI GPT API
  - Deployment: Uvicorn, Docker (optional)
  - Environment Management: Python-dotenv
+
+
+## Getting Started
+### Prerequisites
+
+ - Node.js and npm (for frontend)
+ - Python 3.11+ and pip (for backend)
+ - OpenAI API key
+
+### Installation
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/business-idea-evaluator.git
+cd business-idea-evaluator
+```
+2. Backend setup:
+```
+bash
+cd backend
+python -m venv venv
+source venv/bin/activate        # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
