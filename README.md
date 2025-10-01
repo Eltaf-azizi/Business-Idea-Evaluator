@@ -52,3 +52,23 @@ python -m venv venv
 source venv/bin/activate        # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
+
+3. Create .env file in backend/ directory:
+```
+text
+OPENAI_API_KEY=your_openai_api_key_here
+MODEL_NAME=gpt-4
+```
+4. Run backend server:
+```
+bash
+uvicorn app:app --reload
+```
+5. Frontend setup (in separate terminal):
+```
+bash
+cd frontend
+npm install
+npm start
+```
+6. Open frontend at http://localhost:3000
