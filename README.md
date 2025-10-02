@@ -101,3 +101,15 @@ npm start
  - Enhance AI prompts with templates adapted to industries and business stages
  - Add export functionality to PDF and presentation formats
  - Collect user feedback to fine-tune AI responses with supervised learning
+
+
+## 🙌 Contributing
+
+ - Contributions are welcome!
+ - Fork the project
+ - Create a new branch (`feature/awesome-feature`)
+ - Commit your changes
+ - Open a Pull Request
+ - 
+<h3 align="center">Happy Coding!</h3>
+
