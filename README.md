@@ -82,3 +82,13 @@ npm start
  - AI returns a detailed SWOT analysis response in structured text format
  - Backend parses AI output into a structured JSON object
  - Frontend receives JSON and renders each SWOT segment with lists and styling
+
+
+## Usage
+
+ - Enter any startup or business idea in natural language.
+ - Click "Evaluate Idea" to generate SWOT analysis.
+ - Review strengths, weaknesses, opportunities, and threats highlighted AI-generated insights.
+ - (Advanced Mode) Use expanded input forms for deep analysis and export generated reports.
+
+
