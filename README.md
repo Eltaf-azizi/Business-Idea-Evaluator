@@ -72,3 +72,13 @@ npm install
 npm start
 ```
 6. Open frontend at http://localhost:3000
+
+
+## How It Works
+
+ - User enters a startup idea into the frontend input form
+ - Frontend sends this text via API POST request to FastAPI backend
+ - Backend builds a carefully crafted prompt and calls OpenAI GPT chat completion API
+ - AI returns a detailed SWOT analysis response in structured text format
+ - Backend parses AI output into a structured JSON object
+ - Frontend receives JSON and renders each SWOT segment with lists and styling
