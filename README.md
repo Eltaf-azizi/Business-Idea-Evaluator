@@ -92,3 +92,12 @@ npm start
  - (Advanced Mode) Use expanded input forms for deep analysis and export generated reports.
 
 
+## Future Improvements
+
+ - Implement Advanced Mode features for comprehensive consultancy including financial analysis and competitor mapping
+ - Add user authentication and dashboard for managing multiple ideas
+ - Integrate market data APIs for validation and benchmarking
+ - Improve UI with data visualizations and interactive SWOT maps
+ - Enhance AI prompts with templates adapted to industries and business stages
+ - Add export functionality to PDF and presentation formats
+ - Collect user feedback to fine-tune AI responses with supervised learning
